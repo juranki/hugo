@@ -1,6 +1,6 @@
 FROM debian
 RUN apt-get -qq update \
-	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git ca-certificates asciidoc \
+	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git ca-certificates asciidoc curl \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV HUGO_VERSION 0.37.1
